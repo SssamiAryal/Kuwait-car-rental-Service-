@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ─── ROOT: FULL BACKGROUND IMAGE ─── */
+.nd-simple-root {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* ─── OVERLAY (keeps text readable over any photo) ─── */
+.nd-simple-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(5, 20, 45, 0.55) 0%, rgba(5, 20, 45, 0.75) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ─── HEADER ─── */
+.nd-simple-header {
+  padding: 28px 60px;
+}
+
+.nd-simple-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.nd-simple-brand-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+/* ─── HERO CONTENT ─── */
+.nd-simple-hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.nd-simple-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1e90ff;
+  background: rgba(30, 144, 255, 0.14);
+  border: 1px solid rgba(30, 144, 255, 0.35);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+
+.nd-simple-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 18px;
+}
+
+.nd-simple-hero p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+  max-width: 480px;
+  margin-bottom: 38px;
+}
+
+.nd-simple-btn {
+  background-color: #1e90ff;
+  color: #ffffff;
+  border: none;
+  padding: 15px 36px;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(30, 144, 255, 0.4);
+  transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.nd-simple-btn:hover {
+  background-color: #1278d4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(30, 144, 255, 0.5);
+}
+
+/* ─── FOOTER ─── */
+.nd-simple-footer {
+  text-align: center;
+  padding: 22px 0;
+}
+
+.nd-simple-footer span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .nd-simple-header {
+    padding: 22px 24px;
+  }
+
+  .nd-simple-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .nd-simple-hero p {
+    font-size: 15px;
+  }
+}

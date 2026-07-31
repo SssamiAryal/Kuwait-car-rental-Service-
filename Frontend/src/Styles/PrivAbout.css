@@ -1,0 +1,352 @@
+.priv-about-page {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #ffffff;
+  padding-bottom: 0;
+}
+
+/* ============ HERO ============ */
+.about-hero {
+  position: relative;
+  background: linear-gradient(135deg, #05283d 0%, #0a3d62 55%, #0d4f7c 100%);
+  color: white;
+  padding: 90px 30px 70px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #93c5fd;
+  margin-bottom: 18px;
+}
+
+.about-hero h1 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.about-hero p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Signature element: a dashed "road line" running along the base of the hero,
+   nodding to the driving/road-trip theme without overdoing it */
+.road-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #ffffff 0px,
+    #ffffff 40px,
+    transparent 40px,
+    transparent 70px
+  );
+  opacity: 0.35;
+}
+
+/* ============ STATS STRIP ============ */
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 36px 30px;
+  border-bottom: 1px solid #edf1f7;
+  margin-bottom: 0;
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-stat strong {
+  font-size: 30px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.about-stat span {
+  font-size: 13px;
+  color: #667085;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+/* ============ SHARED SECTION LABELS ============ */
+.about-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.about-label.center {
+  display: block;
+  text-align: center;
+}
+
+.about-section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+/* ============ MISSION ============ */
+.about-mission {
+  background: white;
+  margin: 48px auto 0;
+  padding: 56px 40px;
+  border-radius: 16px;
+  max-width: 1100px;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.06);
+  border: 1px solid #edf1f7;
+}
+
+.about-mission-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-mission-text h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.about-mission-text p {
+  color: #4a5568;
+  line-height: 1.75;
+  font-size: 15.5px;
+}
+
+.about-mission-badge {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  padding: 30px 26px;
+  text-align: center;
+  color: #2563eb;
+}
+
+.about-mission-badge svg {
+  margin-bottom: 14px;
+}
+
+.about-mission-badge p {
+  color: #274a78;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============ WHY CHOOSE US ============ */
+.about-services {
+  margin: 64px auto 0;
+  padding: 0 40px;
+  max-width: 1100px;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.service-box {
+  flex: 1;
+  min-width: 220px;
+  background: white;
+  padding: 34px 24px;
+  border-radius: 14px;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(37,99,235,0.1);
+  border-color: #bfdbfe;
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.service-box h3 {
+  color: #111827;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.service-box p {
+  color: #667085;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* ============ TESTIMONIALS ============ */
+.about-testimonials {
+  margin: 64px auto 0;
+  padding: 0 40px 64px;
+  max-width: 1100px;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 32px 28px;
+  border-radius: 14px;
+  border: 1px solid #edf1f7;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.05);
+  position: relative;
+}
+
+.quote-icon {
+  color: #bfdbfe;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.testimonial-stars {
+  color: #f59e0b;
+  font-size: 13px;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.testimonial-card p {
+  color: #3d4a5c;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonial-person {
+  border-top: 1px solid #eef1f6;
+  padding-top: 14px;
+}
+
+.testimonial-person h4 {
+  color: #111827;
+  font-size: 14.5px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.testimonial-person span {
+  color: #8a94a6;
+  font-size: 13px;
+}
+
+/* ============ CTA ============ */
+.about-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #0a3d62 0%, #2563eb 100%);
+  color: white;
+  padding: 64px 30px;
+  margin-top: 0;
+}
+
+.about-cta h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about-cta p {
+  color: rgba(255,255,255,0.72);
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.explore-btn {
+  background-color: white;
+  color: #2563eb;
+  padding: 13px 34px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ RESPONSIVE ============ */
+@media screen and (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    gap: 30px;
+  }
+
+  .about-mission,
+  .about-services,
+  .about-testimonials {
+    padding: 30px 20px;
+  }
+}

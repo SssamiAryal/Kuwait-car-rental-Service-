@@ -1,0 +1,257 @@
+.priv-cars-page {
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.priv-cars-body {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+}
+
+.priv-filters-section {
+  width: 260px;
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.priv-filters-section h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.priv-filter-group {
+  margin-bottom: 25px;
+}
+
+.priv-filter-group p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.priv-filter-group label {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.priv-cars-container {
+  flex: 1;
+}
+
+.priv-cars-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.priv-cars-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a53be;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-left: 6px solid #0a53be;
+  padding-left: 12px;
+}
+
+.priv-cars-header p {
+  font-size: 15px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.priv-sort-select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #0a53be;
+  color: #0a53be;
+  font-weight: 600;
+  background-color: #f9fbff;
+  cursor: pointer;
+}
+
+.priv-car-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.priv-car-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.priv-car-card:hover {
+  transform: translateY(-8px);
+}
+
+.priv-car-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.priv-car-price {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #0a53be;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.priv-car-name {
+  font-size: 18px;
+  margin: 8px 0 4px;
+  color: #111;
+}
+
+.priv-car-brand {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.priv-car-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.priv-car-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.priv-car-rating {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.priv-car-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.priv-view-btn,
+.priv-book-btn {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.priv-view-btn {
+  background: transparent;
+  color: #0a53be;
+  border: 1px solid #0a53be;
+}
+
+.priv-view-btn:hover {
+  background: #e8f0ff;
+}
+
+.priv-book-btn {
+  background: #0a53be;
+  color: white;
+}
+
+.priv-book-btn:hover {
+  background: #083a90;
+}
+
+@media screen and (max-width: 768px) {
+  .priv-cars-body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .priv-filters-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .priv-car-cards {
+    justify-content: center;
+  }
+
+  .priv-car-card {
+    width: 90%;
+  }
+}
+
+/* Car Details Popup styles - unchanged */
+.cardetail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.cardetail-container {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cardetail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}

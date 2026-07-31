@@ -1,0 +1,131 @@
+.about-page {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  padding-bottom: 60px;
+}
+
+.about-hero {
+  background: #0a3d62;
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 18px;
+}
+
+.about-mission, .about-services, .about-testimonials, .about-cta {
+  background: white;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-mission h2,
+.about-services h2,
+.about-testimonials h2,
+.about-cta h2 {
+  color: #0a53be;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-mission p, .about-cta p {
+  color: #444;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-box {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.service-box h3 {
+  margin-top: 10px;
+  color: #222;
+}
+
+.service-box p {
+  color: #555;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  flex: 1;
+  min-width: 280px;
+  background: #f9fbff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid #0a53be;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  text-align: right;
+  color: #0a53be;
+}
+
+.about-cta {
+  text-align: center;
+}
+
+.explore-btn {
+  background-color: #0a53be;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #083a90;
+}
+
+.floating-home-btn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: #0a53be;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(10, 83, 190, 0.5);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
